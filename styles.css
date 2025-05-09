@@ -45,12 +45,12 @@ header a {
 
 /* main */
 main {
-	flex: 1;
-	font-size: 20px;
+  flex: 1;
+  font-size: 20px;
 }
 
 .text {
-  padding: 3rem 2rem;
+  padding: 3rem 10rem;
 }
 
 /* footer */
@@ -80,7 +80,7 @@ footer {
 
 .slanted-top-box {
   background: #626894;
-  padding: 3rem 2rem;
+  padding: 3rem 10rem;
   width: 100%;
   left: 0;
   box-sizing: border-box; 
@@ -95,7 +95,7 @@ footer {
 
 .slanted-box {
   background: #626894;
-  padding: 3rem 2rem;
+  padding: 3rem 10rem;
   width: 100%;
   left: 0;
   box-sizing: border-box; 
@@ -110,7 +110,7 @@ footer {
 
 .slanted-bottom-box {
   background: #626894;
-  padding: 3rem 2rem;
+  padding: 3rem 10rem;
   width: 100%;
   left: 0;
   box-sizing: border-box; 
