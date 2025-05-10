@@ -108,6 +108,10 @@ footer {
   font-size: 1.2rem;
 }
 
+.slanted-box a {
+  color: #FDFFF7;
+}
+
 .slanted-bottom-box {
   background: #626894;
   padding: 3rem 10rem;
