@@ -1,0 +1,107 @@
+@media screen and (min-height: 450px) and (min-width: 1100px) {
+  .slanted-top-box {clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);}
+  .slanted-box {clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);}
+  .slanted-bottom-box {clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);}
+}
+
+@media screen and (max-height: 450px) and (max-width: 1100px) {
+  .slanted-top-box {clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);}
+  .slanted-box {clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);}
+  .slanted-bottom-box {clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);}
+
+}
+
+.slanted-top-box {
+  background: #626894;
+  padding: 3rem 10rem;
+  width: 100%;
+  left: 0;
+  box-sizing: border-box; 
+  z-index: 0;
+  color: #FDFFF7;
+}
+
+.slanted-top-box p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.slanted-box {
+  background: #626894;
+  padding: 3rem 10rem;
+  width: 100%;
+  left: 0;
+  box-sizing: border-box; 
+  z-index: 0;
+  color: #FDFFF7;
+}
+
+.slanted-box p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.slanted-box a {
+  color: #FDFFF7;
+}
+
+.slanted-bottom-box {
+  background: #626894;
+  padding: 3rem 10rem;
+  width: 100%;
+  left: 0;
+  box-sizing: border-box; 
+  z-index: 0;
+  color: #FDFFF7;
+}
+
+.slanted-bottom-box p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.imageRow {
+  display: flex;
+  flex-wrap: wrap; /* allow wrapping into multiple rows */
+  margin: 10px 0;
+}
+
+.imageRow img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/** the ratios below are the width divided by the height of the picture **/
+.img1 {flex: 0.9474;}
+.img2 {flex: 1.5004;}
+.img3 {flex: 1.0591;}
+.img4 {flex: 0.75;}
+
+.imageRow > div:not(:last-child) {
+  margin-right: 2%;
+}
+
+/* Remove right margin for wrapped elements */
+.imageRow > div {
+  margin-bottom: 10px;
+}
+
+/* --- Media query for smaller screens (e.g., < 768px) --- */
+@media screen and (max-width: 768px) {
+  .imageRow {
+    flex-direction: row;
+  }
+
+  /* Make each image row item take ~48% to fit two per row */
+  .imageRow > div {
+    flex: 1 1 48%;
+    margin-right: 4%;
+  }
+
+  /* Remove right margin for every 2nd item in row */
+  .imageRow > div:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
