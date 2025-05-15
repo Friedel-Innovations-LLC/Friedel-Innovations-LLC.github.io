@@ -61,16 +61,6 @@ footer {
   bottom: 0;
 }
 
-@media screen and (max-height: 450px) and (max-width: 1100px) {
-  header a {font-size: 20px;}
-  html {scroll-padding-top: 200px;}
-}
-
-@media screen and (min-height: 450px) and (min-width: 1100px) {
-  header a {font-size: 25px;}
-  html {scroll-padding-top: 120px;}
-
-
 h2 {
   color: #b74f47;
 }
@@ -82,4 +72,69 @@ h2 {
 
 .showcaseImage:hover {
   box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.slanted-top-box {
+  background: #626894;
+  padding: 3rem 10rem;
+  width: 100%;
+  left: 0;
+  box-sizing: border-box; 
+  z-index: 0;
+  color: #FDFFF7;
+}
+
+.slanted-top-box p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.slanted-box {
+  background: #626894;
+  padding: 3rem 10rem;
+  width: 100%;
+  left: 0;
+  box-sizing: border-box; 
+  z-index: 0;
+  color: #FDFFF7;
+}
+
+.slanted-box p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.slanted-box a {
+  color: #FDFFF7;
+}
+
+.slanted-bottom-box {
+  background: #626894;
+  padding: 3rem 10rem;
+  width: 100%;
+  left: 0;
+  box-sizing: border-box; 
+  z-index: 0;
+  color: #FDFFF7;
+}
+
+.slanted-bottom-box p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-height: 450px) and (max-width: 1100px) {
+  header a {font-size: 20px;}
+  html {scroll-padding-top: 200px;}
+  .slanted-top-box {clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);}
+  .slanted-box {clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);}
+  .slanted-bottom-box {clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);}
+}
+
+@media screen and (min-height: 450px) and (min-width: 1100px) {
+  header a {font-size: 25px;}
+  html {scroll-padding-top: 120px;}
+  .slanted-top-box {clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);}
+  .slanted-box {clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);}
+  .slanted-bottom-box {clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);}
 }
